@@ -19,9 +19,8 @@ function renderNavMarkup(props) {
     </React.Fragment>
   )
 }
-function NavBar(props) {
-  console.log(props.links)
+function TopNavBar(props) {
   return <React.Fragment>{renderNavMarkup(props)}</React.Fragment>
 }
 
-export default NavBar
+export default TopNavBar

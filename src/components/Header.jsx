@@ -1,5 +1,6 @@
 import React from 'react'
-import NavBar from './Navbar.jsx'
+import MidNavBar from './MidNavBar.jsx'
+import TopNavBar from './TopNavBar.jsx'
 import Button from './Button.jsx'
 
 import backgroundImage from '../images/background-pink.png'
@@ -15,12 +16,13 @@ function Header(props) {
 
   return (
     <header style={styles}>
-      <NavBar
+      <TopNavBar
         numOfLinks={5}
         instance="top-nav"
         links={['About', 'Service', 'Work', 'Blog', 'Contact']}
       />
       <Button variant="outline-secondary" text="Learn More" />
+      <MidNavBar links={['Intro', 'Work', 'About', 'Contacts']} />
     </header>
   )
 }
