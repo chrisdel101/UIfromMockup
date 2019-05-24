@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 function Icon(props) {
   // pass event to parent
@@ -6,11 +6,11 @@ function Icon(props) {
     props.onClick(e)
   }
   return (
-    <div className={`icon-container-${props.i} icon-container`} onClick={handleClick}>
-      <i
-        className={`fa fa-${props.type} icon`}
-        aria-hidden="true"
-      />
+    <div
+      className={`icon-container-${props.i} icon-container`}
+      onClick={handleClick}
+    >
+      <i className={`fa fa-${props.type} icon`} aria-hidden="true" />
     </div>
   )
 }

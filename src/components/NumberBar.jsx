@@ -4,7 +4,6 @@ function NumberBar(props) {
   const styles = {
     listStyle: 'none'
   }
-  console.log(props)
   return (
     <div className="numberbar">
       <ul>
