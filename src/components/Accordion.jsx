@@ -3,7 +3,6 @@ import Icon from './Icon'
 import { Accordion, Card } from 'react-bootstrap'
 
 function myAccordion(props) {
-  console.log(props)
   return (
     <Accordion defaultActiveKey="0">
       <Card>

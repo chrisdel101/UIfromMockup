@@ -71,6 +71,36 @@ class Page extends React.Component {
           number: '24',
           text: 'members'
         }
+      ],
+      works: [
+        {
+          name: 'work 1',
+          src: 'http://place-puppy.com/200x100'
+        },
+        {
+          name: 'work 2',
+          src: 'http://place-puppy.com/200x100'
+        },
+        {
+          name: 'work 3',
+          src: 'http://place-puppy.com/200x100'
+        },
+        {
+          name: 'work 4',
+          src: 'http://place-puppy.com/200x100'
+        },
+        {
+          name: 'work 5',
+          src: 'http://place-puppy.com/200x100'
+        },
+        {
+          name: 'work 6',
+          src: 'http://place-puppy.com/200x100'
+        },
+        {
+          name: 'work 7',
+          src: 'http://place-puppy.com/200x100'
+        }
       ]
     }
   }
@@ -86,7 +116,11 @@ class Page extends React.Component {
           ]}
           numberBarItems={this.state.stats}
         />
-        <Main services={this.state.services} reviews={this.state.reviews} />
+        <Main
+          services={this.state.services}
+          reviews={this.state.reviews}
+          works={this.state.works}
+        />
       </React.Fragment>
     )
   }
