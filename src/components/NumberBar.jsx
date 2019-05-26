@@ -43,15 +43,13 @@ class NumberBar extends Component {
   customCounters() {
     const that = this
 
-    function timer(num) {
-      console.log(num)
+    function createTimer(num) {
+      // clone obj
       const copy = cloneDeep(that.state.numberLine)
       let currentValue = that.state.numberLine[num].end
-      console.log('c', currentValue)
-      //clone
       //increment
       currentValue++
-      //assign
+      //assign new
       copy[num].end = currentValue
       //setState
       that.setState({
@@ -61,7 +59,7 @@ class NumberBar extends Component {
       console.log(that.state.numberLine[num].end)
     }
     Object.keys(this.state.numberLine).map((key, i) => {
-      setInterval(timer('1'), 1000)
+      setInterval(createTimer, 1000, key)
     })
   }
   stopTimer() {
