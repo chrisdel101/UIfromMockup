@@ -12,7 +12,7 @@ function Hero(props) {
       {props.imgSources.map((src, i) => {
         return <Image src={src} alt="A puppy" key={i} />
       })}
-      <NumberBar numberBarItems={props.numberBarItems} />
+      <NumberBar numberLine={props.numberLine} />
     </div>
   )
 }

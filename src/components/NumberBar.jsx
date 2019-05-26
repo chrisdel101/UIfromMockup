@@ -7,42 +7,48 @@ class NumberBar extends Component {
     super(props)
     this.state = {
       reached: false,
+      counterDuration: 2.5,
       numberLine: {
         1: {
-          end: 42
+          end: 42,
+          text: 'web desgin projects'
         },
         2: {
-          end: 123
+          end: 123,
+          text: 'happy clients'
         },
         3: {
-          end: 15
+          end: 15,
+          text: 'award winners'
         },
         4: {
-          end: 99
+          end: 99,
+          text: 'cups of coffee'
         },
         5: {
-          end: 24
+          end: 24,
+          text: 'members'
         }
       }
     }
   }
-  renderCountJSMarkUp(number, i) {
+  renderCountJSMarkUp(obj, i) {
     return (
       <div className="counter count-up" key={i}>
         <CountUp
-          end={number.end}
-          duration={2.75}
+          end={obj.end}
+          duration={this.state.counterDuration}
           onEnd={() => {
             this.setState({ reached: true })
             this.customCounters()
           }}
-        />
+        />{' '}
+        {obj.text}
       </div>
     )
   }
   customCounters() {
     const that = this
-
     function createTimer(num) {
       // clone obj
       const copy = cloneDeep(that.state.numberLine)
@@ -55,93 +61,38 @@ class NumberBar extends Component {
       that.setState({
         numberLine: copy
       })
-      //chaos
-      console.log(that.state.numberLine[num].end)
     }
     Object.keys(this.state.numberLine).map((key, i) => {
-      setInterval(createTimer, 1000, key)
+      return setInterval(createTimer, 1000, key)
     })
   }
+  // not used -remove at end
   stopTimer() {
     clearInterval(this.countUp)
   }
-  renderCustomMarkUp(arr, i) {
+  renderCustomMarkUp(obj, i) {
     return (
-      <span className="counter custome-counter" key={i}>
-        {arr[1].end}
-      </span>
+      <div className="counter custome-counter" key={i}>
+        <span>
+          {obj.end} {obj.text}
+        </span>
+      </div>
     )
-    // })
+  }
+  renderProperMarkup(obj, i) {
+    if (!this.state.reached) {
+      return this.renderCountJSMarkUp(obj, i)
+    } else if (this.state.reached) {
+      return this.renderCustomMarkUp(obj, i)
+    }
   }
   renderCount() {
-    if (!this.state.reached) {
-      return Object.values(this.state.numberLine).map((number, i) => {
-        // console.log(number)
-        return this.renderCountJSMarkUp(number, i)
-      })
-    } else if (this.state.reached) {
-      return (
-        <div>
-          <span>{this.state.numberLine['1'].end}</span>
-          <span>{this.state.numberLine['2'].end}</span>
-          <span>{this.state.numberLine['3'].end}</span>
-        </div>
-      )
-      //  Object.entries(this.state.numberLine).map((arr, i) => {
-      // })
-    }
+    return Object.values(this.state.numberLine).map((obj, i) =>
+      this.renderProperMarkup(obj, i)
+    )
   }
   render() {
     return <div>{this.renderCount()}</div>
   }
 }
 export default NumberBar
-// function NumberBar(props) {
-//   const [count, setCount] = useState(100)
-//   // function postCount(val, test) {
-//   //   var countUp = setInterval(function() {
-//   //     console.log(val)
-//   //     val++
-//   //     // if (val === 10) {
-//   //     //   console.log('stop')
-//   //     //   clearInterval(countUp)
-//   //     // }
-//   //   }, 500)
-//   // }
-//   const styles = {
-//     listStyle: 'none'
-//   }
-//   const SimpleHook = () => {
-//     const { countUp } = useCountUp({ end: 100 })
-//     setCount(countUp)
-//     console.log(count)
-//     return <div>{countUp}</div>
-//   }
-
-//   // let testVal = 100
-//   return (
-//     <div className="numberbar">
-//       <SimpleHook />
-//       {/* <CountUp
-//         start={0}
-//         end={count}
-//         duration={2.75}
-//         onEnd={() => {
-//           // setInterval(() => {
-//           setCount(count + 1)
-//           // console.log(count)
-//           // }, 500)
-//         }}
-//       /> */}
-//       <ul>
-//         {props.numberBarItems.map((obj, i) => {
-//           return (
-//             <li className="numberbar-item" key={i} style={styles}>
-//               <span className="numerbar-number">{obj.number}</span> {obj.text}
-//             </li>
-//           )
-//         })}
-//       </ul>
-//     </div>
-//   )
-// }
