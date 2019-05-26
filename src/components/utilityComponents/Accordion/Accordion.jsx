@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './Icon'
+import Icon from '../Icon/Icon'
 import { makeStyles } from '@material-ui/core/styles'
 import ExpansionPanel from '@material-ui/core/ExpansionPanel'
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
@@ -18,7 +18,6 @@ const useStyles = makeStyles(theme => ({
 }))
 
 function SimpleExpansionPanel(props) {
-  console.log(props.icon)
   const classes = useStyles()
   return (
     <div className={classes.root}>

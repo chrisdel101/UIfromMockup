@@ -1,10 +1,12 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
+import styles from './index.css'
 
 function renderNavMarkup(props) {
   return (
     <React.Fragment>
       <Nav
+        className="top-navbar"
         activeKey="/home"
         onSelect={selectedKey => alert(`selected ${selectedKey}`)}
       >

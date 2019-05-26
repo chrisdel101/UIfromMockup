@@ -40,14 +40,14 @@ class NumberBar extends Component {
           duration={this.state.counterDuration}
           onEnd={() => {
             this.setState({ reached: true })
-            this.customCounters()
+            this.createCustomCounters()
           }}
         />{' '}
         {obj.text}
       </div>
     )
   }
-  customCounters() {
+  createCustomCounters() {
     const that = this
     function createTimer(num) {
       // clone obj
@@ -62,6 +62,7 @@ class NumberBar extends Component {
         numberLine: copy
       })
     }
+    // set interval
     Object.keys(this.state.numberLine).map((key, i) => {
       return setInterval(createTimer, 1000, key)
     })

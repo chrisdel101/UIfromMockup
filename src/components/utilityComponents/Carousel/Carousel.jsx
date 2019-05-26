@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
-import Image from './Image'
-import Review from './Review'
+import Image from '../Image/Image'
+import Review from '../Review/Review'
 
 function renderReviews(props) {
   return props.reviews.map((review, i) => {

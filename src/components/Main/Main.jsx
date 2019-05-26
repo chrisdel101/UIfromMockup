@@ -1,10 +1,10 @@
 import React from 'react'
-import BlockTextHeader from './BlockTextHeader'
-import Image from './Image'
-import InfoTextBlock from './InfoTextBlock'
-import Accordion from './Accordion'
-import Review from './Review'
-import Carousel from './Carousel'
+import BlockTextHeader from '../utilityComponents/HeaderTextBlock/HeaderTextBlock'
+import Image from '../utilityComponents/Image/Image'
+import InfoTextBlock from '../utilityComponents/InfoTextBlock/InfoTextBlock'
+import Accordion from '../utilityComponents/Accordion/Accordion'
+import Review from '../utilityComponents/Review/Review'
+import Carousel from '../utilityComponents/Carousel/Carousel'
 
 function renderWorks(props) {
   return props.works.map((work, i) => {

@@ -1,8 +1,8 @@
 import React from 'react'
-import BlockTextHeader from './BlockTextHeader'
-import InfoTextBlock from './InfoTextBlock'
-import Image from './Image'
-import NumberBar from './NumberBar'
+import BlockTextHeader from '../utilityComponents/HeaderTextBlock/HeaderTextBlock'
+import InfoTextBlock from '../utilityComponents/InfoTextBlock/InfoTextBlock'
+import Image from '../utilityComponents/Image/Image'
+import NumberBar from '../utilityComponents/NumberBar/NumberBar'
 
 function Hero(props) {
   return (

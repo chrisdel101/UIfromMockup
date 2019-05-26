@@ -1,6 +1,6 @@
 import React from 'react'
-import InfoBlockText from './InfoTextBlock'
-import Icon from './Icon'
+import InfoBlockText from '../InfoTextBlock/InfoTextBlock'
+import Icon from '../Icon/Icon'
 
 function Review(props) {
   return (

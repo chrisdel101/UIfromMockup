@@ -1,7 +1,8 @@
 import React from 'react'
-import Header from './Header'
-import Hero from './Hero'
-import Main from './Main'
+import Header from '../Header/Header'
+import Hero from '../Hero/Hero'
+import Main from '../Main/Main'
+import styles from './index.css'
 
 class Page extends React.Component {
   constructor(props) {
@@ -84,7 +85,7 @@ class Page extends React.Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div className="page">
         <Header />
         <Hero
           imgSources={[
@@ -100,7 +101,7 @@ class Page extends React.Component {
           works={this.state.works}
           numberLine={this.state.numberLine}
         />
-      </React.Fragment>
+      </div>
     )
   }
 }

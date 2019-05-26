@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './index.css'
 
 function renderNavMarkup(props) {
   return (
@@ -6,7 +7,8 @@ function renderNavMarkup(props) {
       <div className="mid-navbar">
         {props.links.map((link, i) => {
           return (
-            <nav key={i}>
+            <nav key={i} className="mid-navbar-link">
+              <div className="midnav-status-line" />
               <a href={`/${link}`}>{link}</a>
             </nav>
           )
