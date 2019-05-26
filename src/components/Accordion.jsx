@@ -1,32 +1,48 @@
 import React from 'react'
 import Icon from './Icon'
-import { Accordion, Card, Button } from 'react-bootstrap'
+import { makeStyles } from '@material-ui/core/styles'
+import ExpansionPanel from '@material-ui/core/ExpansionPanel'
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
+import Typography from '@material-ui/core/Typography'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
-function myAccordion(props) {
+const useStyles = makeStyles(theme => ({
+  root: {
+    width: '100%'
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(15),
+    fontWeight: theme.typography.fontWeightRegular
+  }
+}))
+
+function SimpleExpansionPanel(props) {
+  console.log(props.icon)
+  const classes = useStyles()
   return (
-    <Accordion defaultActiveKey="0">
-      <Card>
-        <Card.Header>
-          <Accordion.Toggle as={Button} variant="link" eventKey="0">
-            Click me!
-          </Accordion.Toggle>
-        </Card.Header>
-        <Accordion.Collapse eventKey="0">
-          <Card.Body>Hello! I'm the body</Card.Body>
-        </Accordion.Collapse>
-      </Card>
-      <Card>
-        <Card.Header>
-          <Accordion.Toggle as={Button} variant="link" eventKey="1">
-            Click me!
-          </Accordion.Toggle>
-        </Card.Header>
-        <Accordion.Collapse eventKey="1">
-          <Card.Body>Hello! I'm another body</Card.Body>
-        </Accordion.Collapse>
-      </Card>
-    </Accordion>
+    <div className={classes.root}>
+      {Object.values(props.drawers).map((drawer, i) => {
+        return (
+          <ExpansionPanel key={i}>
+            <ExpansionPanelSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`panel${i + 1}a-content"
+            id="panel${i + 1}a-header`}
+            >
+              <Icon type={drawer.icon} i={i} />
+              <Typography className={classes.heading}>
+                {drawer.heading}
+              </Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>{drawer.text}</Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        )
+      })}
+    </div>
   )
 }
 
-export default myAccordion
+export default SimpleExpansionPanel
