@@ -12,7 +12,36 @@ function Header(props) {
       <TopNavBar
         numOfLinks={5}
         instance="top-nav"
-        links={['About', 'Service', 'Work', 'Blog', 'Contact']}
+        links={[
+          {
+            type: 'link',
+            text: 'About'
+          },
+          {
+            type: 'link',
+            text: 'Service'
+          },
+          {
+            type: 'link',
+            text: 'Work'
+          },
+          {
+            type: 'link',
+            text: 'Blog'
+          },
+          {
+            type: 'link',
+            text: 'Contact'
+          },
+          {
+            type: 'icon',
+            iconName: 'shopping-cart'
+          },
+          {
+            type: 'icon',
+            iconName: 'search'
+          }
+        ]}
       />
       <Button variant="outline-secondary" text="Learn More" />
       <MidNavBar links={['Intro', 'Work', 'About', 'Contacts']} />

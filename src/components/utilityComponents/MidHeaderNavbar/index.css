@@ -19,6 +19,6 @@
   .mid-navbar {
     grid-template-rows: repeat(4, minmax(40px, 1fr));
     grid-template-columns: initial;
-    top: 150px;
+    top: 100px;
   }
 }
