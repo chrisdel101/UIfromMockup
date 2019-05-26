@@ -8,7 +8,7 @@ function Icon(props) {
   return (
     <div
       className={`icon-container-${props.i} icon-container`}
-      onClick={handleClick}
+      // onClick={handleClick}
     >
       <i className={`fa fa-${props.type} icon`} aria-hidden="true" />
     </div>
