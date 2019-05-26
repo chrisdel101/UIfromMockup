@@ -34,36 +34,40 @@ class NumberBar extends Component {
           duration={2.75}
           onEnd={() => {
             this.setState({ reached: true })
-            this.customCounter()
+            this.customCounters()
           }}
         />
       </div>
     )
   }
-  customCounter(start, id) {
+  customCounters() {
     const that = this
-    function timer() {
+
+    function timer(num) {
+      console.log(num)
       const copy = cloneDeep(that.state.numberLine)
-      let currentValue = that.state.numberLine['1'].end
+      let currentValue = that.state.numberLine[num].end
+      console.log('c', currentValue)
       //clone
       //increment
       currentValue++
       //assign
-      copy['1'].end = currentValue
+      copy[num].end = currentValue
       //setState
       that.setState({
         numberLine: copy
       })
       //chaos
-      console.log(that.state.numberLine['1'].end)
+      console.log(that.state.numberLine[num].end)
     }
-    let counter = setInterval(timer, 1000)
+    Object.keys(this.state.numberLine).map((key, i) => {
+      setInterval(timer('1'), 1000)
+    })
   }
   stopTimer() {
     clearInterval(this.countUp)
   }
   renderCustomMarkUp(arr, i) {
-    this.customCounter()
     return (
       <span className="counter custome-counter" key={i}>
         {arr[1].end}
@@ -78,8 +82,14 @@ class NumberBar extends Component {
         return this.renderCountJSMarkUp(number, i)
       })
     } else if (this.state.reached) {
-      return <span>{this.state.numberLine['1'].end}</span>
-      // return Object.entries(this.state.numberLine).map((arr, i) => {
+      return (
+        <div>
+          <span>{this.state.numberLine['1'].end}</span>
+          <span>{this.state.numberLine['2'].end}</span>
+          <span>{this.state.numberLine['3'].end}</span>
+        </div>
+      )
+      //  Object.entries(this.state.numberLine).map((arr, i) => {
       // })
     }
   }
