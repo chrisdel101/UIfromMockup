@@ -21,10 +21,24 @@
 .main-secondblock .block-text-header {
   align-self: center;
 }
+.main-thirdblock {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #f8f8f8;
+}
 .accordion-container {
+  margin: 40px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .accordion-container .image-container img {
   width: 100%;
+}
+
+.carousel .review {
+  max-width: 500px;
+  margin: auto;
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

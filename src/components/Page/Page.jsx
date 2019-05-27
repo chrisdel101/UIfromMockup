@@ -11,18 +11,21 @@ class Page extends React.Component {
       reviews: [
         {
           icon: 'icon',
+          src: 'http://place-puppy.com/101x101',
           name: 'Joe',
           text:
             'Justo voluptua gubergren duo eos sadipscing amet et rebum dolores ut, ut ea sadipscing et tempor lorem lorem diam, dolore.'
         },
         {
           icon: 'icon',
+          src: 'http://place-puppy.com/101x102',
           name: 'Sam',
           text:
-            'Justo voluptua gubergren duo eos sadipscing amet et rebum dolores ut, ut ea sadipscing et tempor lorem lorem diam, dolore.'
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nihil nisi. Molestias ab facilis esse voluptatibus vero excepturi optio laborum, rem, modi nihil expedita. Omnis necessitatibus dignissimos qui minus mollitia?'
         },
         {
           icon: 'icon',
+          src: 'http://place-puppy.com/102x101',
           name: 'Sara',
           text:
             'Justo voluptua gubergren duo eos sadipscing amet et rebum dolores ut, ut ea sadipscing et tempor lorem lorem diam, dolore.'

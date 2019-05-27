@@ -2,6 +2,7 @@ import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import Image from '../Image/Image'
 import Review from '../Review/Review'
+import './index.css'
 
 function renderReviews(props) {
   return props.reviews.map((review, i) => {
@@ -17,24 +18,18 @@ function renderReviews(props) {
 }
 
 function myCarousel(props) {
-  const style = {
-    height: '200px',
-    backgroundColor: '#d8d8d8'
-  }
   return (
-    <Carousel style={style} interval={30000}>
+    <Carousel interval={30000}>
       {props.reviews.map((review, i) => {
+        console.log(review)
         return (
           <Carousel.Item key={i}>
-            <img src="http://place-puppy.com/100x100" />
-            <Carousel.Caption>
-              <Review
-                icon={review.icon}
-                name={review.name}
-                text={review.text}
-                key={i}
-              />
-            </Carousel.Caption>
+            <Review
+              src={review.src}
+              name={review.name}
+              text={review.text}
+              key={i}
+            />
           </Carousel.Item>
         )
       })}

@@ -1,0 +1,9 @@
+.carousel {
+  height: 200px;
+  max-width: 800px;
+  margin: auto;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: opacity(0.5) drop-shadow(0 0 0 black);
+}
