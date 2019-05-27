@@ -5,3 +5,9 @@
   text-transform: uppercase;
   font-weight: bolder;
 }
+.cursive-text {
+  font-family: 'Kaushan Script', cursive;
+}
+.block-text {
+  font-family: 'Montserrat', sans-serif;
+}

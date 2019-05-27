@@ -1,0 +1,39 @@
+.expansion-panel .expansion-panel-inner {
+  min-height: 75px;
+  margin: 10px 0;
+}
+.expansion-panel .expansion-panel-inner.Mui-expanded {
+  border: 1px solid #e5e5e5;
+  position: relative;
+  bottom: 10px;
+}
+.expansion-panel.MuiPaper-elevation1 {
+  margin: 10px 0;
+  border: 1px solid #e5e5e5;
+  box-shadow: initial;
+}
+.accordion-container .panel-heading {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.accordion-container .icon-container {
+  color: #95e1d3;
+  font-size: 25px;
+}
+
+.MuiSvgIcon-root {
+  font-size: 2.25em;
+  color: #d0d0d0;
+}
+.accordion-container ::-webkit-scrollbar-thumb {
+  background-color: #95e1d3;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  background: #95e1d3;
+}
+.accordion-container .MuiCollapse-container {
+  overflow-y: scroll;
+  max-height: 100px;
+}

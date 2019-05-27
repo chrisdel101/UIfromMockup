@@ -36,8 +36,10 @@ function Main(props) {
       <div className="main-secondblock">
         <BlockTextHeader cursive="Service" block="what we do" />
         <InfoTextBlock text="Diam justo dolor elitr sadipscing sanctus duo erat, amet lorem ut sed sed sanctus labore. Vero amet ipsum sit dolor.." />
-        <Image src="http://place-puppy.com/200x300" alt="a puppy" />
-        <Accordion drawers={props.services} />
+        <div className="accordion-container">
+          <Image src="http://place-puppy.com/400x280" alt="a puppy" />
+          <Accordion drawers={props.services} />
+        </div>
       </div>
 
       <div className="main-thirdblock">

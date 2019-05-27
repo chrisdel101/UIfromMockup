@@ -30,21 +30,18 @@ class Page extends React.Component {
       ],
       services: {
         1: {
-          arrows: ['chevron-up', 'chevron-down'],
           icon: 'picture-o',
           heading: 'photography',
           text:
-            'Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.'
+            'Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide. Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.'
         },
         2: {
-          arrows: ['chevron-up', 'chevron-down'],
           icon: 'sliders',
           heading: 'creativity',
           text:
             'Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.'
         },
         3: {
-          arrows: ['chevron-up', 'chevron-down'],
           icon: 'bullseye',
           heading: 'web design',
           text:
