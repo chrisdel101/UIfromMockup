@@ -1,0 +1,20 @@
+.number-bar {
+  width: 100vw;
+  /* https://stackoverflow.com/a/31391593/5972531 */
+  margin-left: calc(-50vw + 50%);
+  background-image: url('../../../images/teal_rect.png');
+  color: #ffffff;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+.numberbar-number {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+.counter {
+  margin: 0 15px;
+  text-align: center;
+}

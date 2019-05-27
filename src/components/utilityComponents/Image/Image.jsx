@@ -10,7 +10,11 @@ function renderType(props) {
   }
 }
 function MyImage(props) {
-  return <div className="image-container">{renderType(props)}</div>
+  return (
+    <div className="image-container" id={props.id ? props.id : ''}>
+      {renderType(props)}
+    </div>
+  )
 }
 
 export default MyImage

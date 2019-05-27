@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CountUp from 'react-countup'
 import { cloneDeep } from 'lodash'
+import './index.css'
 
 class NumberBar extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class NumberBar extends Component {
     return (
       <div className="counter count-up" key={i}>
         <CountUp
+          className="numberbar-number"
           end={obj.end}
           duration={this.state.counterDuration}
           onEnd={() => {
@@ -43,7 +45,8 @@ class NumberBar extends Component {
             this.createCustomCounters()
           }}
         />{' '}
-        {obj.text}
+        <br />
+        <span className="numberbar-text">{obj.text}</span>
       </div>
     )
   }
@@ -74,9 +77,9 @@ class NumberBar extends Component {
   renderCustomMarkUp(obj, i) {
     return (
       <div className="counter custome-counter" key={i}>
-        <span>
-          {obj.end} {obj.text}
-        </span>
+        <span className="numberbar-number">{obj.end}</span>
+        <br />
+        <span className="numberbar-text">{obj.text}</span>
       </div>
     )
   }
@@ -93,7 +96,7 @@ class NumberBar extends Component {
     )
   }
   render() {
-    return <div>{this.renderCount()}</div>
+    return <div className="number-bar">{this.renderCount()}</div>
   }
 }
 export default NumberBar

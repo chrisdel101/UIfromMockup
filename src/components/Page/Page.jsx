@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header/Header'
 import Hero from '../Hero/Hero'
 import Main from '../Main/Main'
-import styles from './index.css'
+import './index.css'
 
 class Page extends React.Component {
   constructor(props) {

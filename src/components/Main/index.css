@@ -1,0 +1,23 @@
+.main-firstblock {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-image: url('../../images/forest.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 400px;
+}
+#stacked-image2 {
+  position: absolute;
+}
+#stacked-image1 {
+  position: relative;
+}
+.main-secondblock {
+  display: flex;
+  flex-direction: column;
+}
+.main-secondblock .block-text-header {
+  align-self: center;
+}

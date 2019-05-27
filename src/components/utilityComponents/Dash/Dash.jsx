@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './index.css'
+import './index.css'
 
 function Dash(props) {
   return <div className="dash" />

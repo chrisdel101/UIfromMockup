@@ -5,6 +5,7 @@ import InfoTextBlock from '../utilityComponents/InfoTextBlock/InfoTextBlock'
 import Accordion from '../utilityComponents/Accordion/Accordion'
 import Review from '../utilityComponents/Review/Review'
 import Carousel from '../utilityComponents/Carousel/Carousel'
+import './index.css'
 
 function renderWorks(props) {
   return props.works.map((work, i) => {
@@ -20,8 +21,16 @@ function Main(props) {
     <main className="main">
       <div className="main-firstblock">
         <BlockTextHeader cursive="For all designs" block="unique designs" />
-        <Image src="http://place-puppy.com/200x300" alt="a puppy" />
-        <Image src="http://place-puppy.com/100x200" alt="a puppy" />
+        <Image
+          id="stacked-image1"
+          src="http://place-puppy.com/200x300"
+          alt="a puppy"
+        />
+        <Image
+          id="stacked-image2"
+          src="http://place-puppy.com/100x200"
+          alt="a puppy"
+        />
       </div>
 
       <div className="main-secondblock">
