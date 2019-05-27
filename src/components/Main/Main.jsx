@@ -8,13 +8,13 @@ import Carousel from '../utilityComponents/Carousel/Carousel'
 import './index.css'
 
 function renderWorks(props) {
-  return props.works.map((work, i) => {
-    return (
-      <div className="work" key={i}>
-        <Image src={work.src} alt={work.name} />
-      </div>
-    )
-  })
+  return (
+    <div className="work">
+      {props.works.map((work, i) => {
+        return <Image src={work.src} alt={work.name} key={i} />
+      })}
+    </div>
+  )
 }
 function Main(props) {
   return (

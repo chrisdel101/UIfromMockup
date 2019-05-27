@@ -11,3 +11,7 @@
 .block-text {
   font-family: 'Montserrat', sans-serif;
 }
+
+.block-text-header {
+  text-align: center;
+}
