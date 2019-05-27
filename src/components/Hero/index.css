@@ -11,6 +11,9 @@
 .hero-firstblock {
   margin: 70px 0;
 }
+.hero .block-text-header {
+  margin: 0;
+}
 
 .hero .hero-image-container {
   display: grid;

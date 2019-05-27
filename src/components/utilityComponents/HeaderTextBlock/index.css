@@ -14,4 +14,8 @@
 
 .block-text-header {
   text-align: center;
+  margin-top: 40px;
+}
+.hero .block-text-header {
+  margin: 0;
 }

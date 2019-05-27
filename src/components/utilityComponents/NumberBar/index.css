@@ -8,9 +8,10 @@
   height: 150px;
   align-items: center;
   justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 }
 .numberbar-number {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bolder;
   text-align: center;
 }

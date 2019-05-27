@@ -54,31 +54,31 @@ class Page extends React.Component {
       works: [
         {
           name: 'work 1',
-          src: 'http://place-puppy.com/200x100'
+          src: 'http://place-puppy.com/250x250'
         },
         {
           name: 'work 2',
-          src: 'http://place-puppy.com/200x100'
+          src: 'http://place-puppy.com/250x250'
         },
         {
           name: 'work 3',
-          src: 'http://place-puppy.com/200x100'
+          src: 'http://place-puppy.com/250x250'
         },
         {
           name: 'work 4',
-          src: 'http://place-puppy.com/200x100'
+          src: 'http://place-puppy.com/250x500'
         },
         {
           name: 'work 5',
-          src: 'http://place-puppy.com/200x100'
+          src: 'http://place-puppy.com/250x250'
         },
         {
           name: 'work 6',
-          src: 'http://place-puppy.com/200x100'
+          src: 'http://place-puppy.com/250x250'
         },
         {
           name: 'work 7',
-          src: 'http://place-puppy.com/200x100'
+          src: 'http://place-puppy.com/250x250'
         }
       ],
       headerBlocks: {
@@ -98,7 +98,7 @@ class Page extends React.Component {
           cursive: 'Service',
           block: 'What we do'
         },
-        mainThirdBlock: {
+        mainFourthBlock: {
           cursive: 'What we do',
           block: 'some of our work'
         }

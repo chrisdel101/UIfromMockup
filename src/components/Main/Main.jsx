@@ -3,7 +3,7 @@ import BlockTextHeader from '../utilityComponents/HeaderTextBlock/HeaderTextBloc
 import Image from '../utilityComponents/Image/Image'
 import InfoTextBlock from '../utilityComponents/InfoTextBlock/InfoTextBlock'
 import Accordion from '../utilityComponents/Accordion/Accordion'
-import Review from '../utilityComponents/Review/Review'
+import Dash from '../utilityComponents/Dash/Dash'
 import Carousel from '../utilityComponents/Carousel/Carousel'
 import './index.css'
 
@@ -17,25 +17,33 @@ function renderWorks(props) {
   )
 }
 function Main(props) {
+  const {
+    mainFirstBlock,
+    mainSecondBlock,
+    mainFourthBlock
+  } = props.headerBlocks
   return (
     <main className="main">
       <div className="main-firstblock">
-        <BlockTextHeader cursive="For all designs" block="unique designs" />
+        <BlockTextHeader
+          cursive={mainFirstBlock.cursive}
+          block={mainFirstBlock.block}
+        />
+        <Dash />
         <Image
           id="stacked-image1"
           src="http://place-puppy.com/200x300"
           alt="a puppy"
         />
-        <Image
-          id="stacked-image2"
-          src="http://place-puppy.com/100x200"
-          alt="a puppy"
-        />
       </div>
 
       <div className="main-secondblock">
-        <BlockTextHeader cursive="Service" block="what we do" />
+        <BlockTextHeader
+          cursive={mainSecondBlock.cursive}
+          block={mainSecondBlock.block}
+        />
         <InfoTextBlock text="Diam justo dolor elitr sadipscing sanctus duo erat, amet lorem ut sed sed sanctus labore. Vero amet ipsum sit dolor.." />
+        <Dash />
         <div className="accordion-container">
           <Image src="http://place-puppy.com/400x280" alt="a puppy" />
           <Accordion drawers={props.services} />
@@ -47,7 +55,11 @@ function Main(props) {
       </div>
 
       <div className="main-fourthblock">
-        <BlockTextHeader cursive="What we do" block="some of our work" />
+        <BlockTextHeader
+          cursive={mainFourthBlock.cursive}
+          block={mainFourthBlock.block}
+        />
+        <Dash />
         <InfoTextBlock text="Diam justo dolor elitr sadipscing sanctus duo erat, amet lorem ut sed sed sanctus labore. Vero amet ipsum sit dolor.." />
         {renderWorks(props)}
       </div>
