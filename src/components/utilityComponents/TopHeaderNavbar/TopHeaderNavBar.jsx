@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '../Icon/Icon'
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import { Nav, Navbar } from 'react-bootstrap'
 import styles from './index.css'
 
 function renderLinkType(prop, i) {

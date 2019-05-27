@@ -4,8 +4,34 @@
   width: 100vw;
   /* https://stackoverflow.com/questions/31391459/how-can-i-expand-a-child-div-to-100-screen-width-if-the-container-div-is-smalle */
   margin-left: calc(-50vw + 50%);
-  height: 400px;
+  height: 550px;
   background-image: url('../../images/background-pink.png');
   display: flex;
   flex-direction: column;
+}
+.header-btn {
+  width: 150px;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 0;
+  align-self: center;
+}
+.header .block-text-header {
+  color: #ffffff;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.header .block-text-header .cursive-text {
+  font-size: 30px;
+}
+.header .block-text-header .block-text {
+  font-size: 65px;
+}
+.header .dash {
+  border-color: #ffffff;
+  align-self: center;
+  padding: 20px 0;
 }

@@ -1,10 +1,9 @@
 .mid-navbar {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 150px));
-  /* align-self: center; */
   justify-content: center;
   position: relative;
-  top: 200px;
+  margin-top: 50px;
 }
 .mid-navbar-link {
   margin: 0 5px;
@@ -19,6 +18,5 @@
   .mid-navbar {
     grid-template-rows: repeat(4, minmax(40px, 1fr));
     grid-template-columns: initial;
-    top: 100px;
   }
 }

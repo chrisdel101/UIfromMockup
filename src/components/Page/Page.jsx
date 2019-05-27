@@ -80,22 +80,46 @@ class Page extends React.Component {
           name: 'work 7',
           src: 'http://place-puppy.com/200x100'
         }
-      ]
+      ],
+      headerBlocks: {
+        header: {
+          cursive: 'Creative Template',
+          block: 'welcome to mogo'
+        },
+        hero: {
+          cursive: 'What we do',
+          block: 'story about us'
+        },
+        mainFirstBlock: {
+          cursive: 'For all devices',
+          block: 'unique design'
+        },
+        mainSecondBlock: {
+          cursive: 'Service',
+          block: 'What we do'
+        },
+        mainThirdBlock: {
+          cursive: 'What we do',
+          block: 'some of our work'
+        }
+      }
     }
   }
   render() {
     return (
       <div className="page">
-        <Header />
+        <Header headerBlocks={this.state.headerBlocks} />
         <Hero
           imgSources={[
             'http://place-puppy.com/200x201',
             'http://place-puppy.com/200x201',
             'http://place-puppy.com/200x201'
           ]}
+          headerBlocks={this.state.headerBlocks}
           numberLine={this.state.numberLine}
         />
         <Main
+          headerBlocks={this.state.headerBlocks}
           services={this.state.services}
           reviews={this.state.reviews}
           works={this.state.works}
