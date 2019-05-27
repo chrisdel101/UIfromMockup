@@ -1,7 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import Icon from '../Icon/Icon'
 import { Nav, Navbar } from 'react-bootstrap'
 import './index.css'
+import { cloneDeep, mapValues } from 'lodash'
 
 // function addUnderlineOnMount(e) {}
 class TopNavBar extends React.Component {
@@ -10,10 +11,10 @@ class TopNavBar extends React.Component {
     this.state = {}
   }
   renderLinkType(link, i) {
-    // console.log(inputEl)
     if (link.type === 'link') {
       return (
         <Nav.Link
+          className={`${this.addUnderline(link) ? 'active' : ''}`}
           key={i}
           href={`/${link.text}`}
           onMouseOver={e => this.moveUnderLine(e)}
@@ -24,6 +25,7 @@ class TopNavBar extends React.Component {
     } else if (link.type === 'icon') {
       return (
         <Nav.Link
+          className={`${this.addUnderline(link) ? 'active' : ''}`}
           key={i}
           href={`/${link.text}`}
           onMouseOver={e => this.moveUnderLine(e)}
@@ -33,8 +35,31 @@ class TopNavBar extends React.Component {
       )
     }
   }
-  moveUnderLine(e, inputEl) {
-    console.log(e, inputEl.current)
+  addUnderline(link) {
+    if (!link || !link.text || !this.state.links) return
+    if (!this.state.links[link.text]) return
+    return true
+  }
+  componentDidMount() {
+    const obj = {}
+    // create obj for nulls
+    this.props.links.map(link => {
+      obj[link.text] = null
+    })
+    // set about to active on mount
+    obj['About'] = 'active'
+    this.setState({
+      links: obj
+    })
+  }
+  // move underline on hover
+  moveUnderLine(e) {
+    let copy = cloneDeep(this.state.links)
+    copy = mapValues(copy, () => false)
+    copy[e.target.innerHTML] = 'active'
+    this.setState({
+      links: copy
+    })
   }
   renderNavMarkup() {
     return (

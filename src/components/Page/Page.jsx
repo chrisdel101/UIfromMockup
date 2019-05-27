@@ -102,13 +102,48 @@ class Page extends React.Component {
           cursive: 'What we do',
           block: 'some of our work'
         }
-      }
+      },
+      topNavlinks: [
+        {
+          type: 'link',
+          text: 'About'
+        },
+        {
+          type: 'link',
+          text: 'Service'
+        },
+        {
+          type: 'link',
+          text: 'Work'
+        },
+        {
+          type: 'link',
+          text: 'Blog'
+        },
+        {
+          type: 'link',
+          text: 'Contact'
+        },
+        {
+          type: 'icon',
+          iconName: 'shopping-cart'
+        },
+        {
+          type: 'icon',
+          iconName: 'search'
+        }
+      ],
+      midNavLinks: ['Intro', 'Work', 'About', 'Contacts']
     }
   }
   render() {
     return (
       <div className="page">
-        <Header headerBlocks={this.state.headerBlocks} />
+        <Header
+          headerBlocks={this.state.headerBlocks}
+          topNavlinks={this.state.topNavlinks}
+          midNavLinks={this.state.midNavLinks}
+        />
         <Hero
           imgSources={[
             'http://place-puppy.com/200x201',
