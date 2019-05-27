@@ -6,3 +6,6 @@
 .top-navbar .navbar-collapse {
   box-shadow: none;
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
