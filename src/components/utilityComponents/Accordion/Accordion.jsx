@@ -1,42 +1,61 @@
 import React from 'react'
-import Icon from '../Icon/Icon'
 import { makeStyles } from '@material-ui/core/styles'
 import ExpansionPanel from '@material-ui/core/ExpansionPanel'
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
 import Typography from '@material-ui/core/Typography'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import Icon from '../Icon/Icon'
 import './index.css'
+
+// import './index.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%'
   },
-  expansionPanelInner: {
-    minHeight: '75px'
-  },
   heading: {
     fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
+    flexBasis: '33.33%',
+    flexShrink: 0
+  },
+  secondaryHeading: {
+    fontSize: theme.typography.pxToRem(15),
+    color: theme.palette.text.secondary
   }
 }))
 
-function SimpleExpansionPanel(props) {
+function ControlledExpansionPanels(props) {
   const classes = useStyles()
+  const [expanded, setExpanded] = React.useState(false)
+
+  const handleChange = panel => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false)
+  }
+
   return (
     <div className={`${classes.root} accordion`}>
       {Object.values(props.drawers).map((drawer, i) => {
         return (
-          <ExpansionPanel key={i} className="expansion-panel">
+          <ExpansionPanel
+            key={i}
+            expanded={expanded === `panel${i + 1}`}
+            onChange={handleChange(`panel${i + 1}`)}
+            className="expansion-panel"
+          >
             <ExpansionPanelSummary
               className="expansion-panel-inner"
               expandIcon={<ExpandMoreIcon />}
-              aria-controls={`panel${i + 1}a-content"
-            id="panel${i + 1}a-header`}
+              aria-controls={`panel${i + 1}bh-content`}
+              id={`panel${i + 1}bh-header`}
             >
               <Icon type={drawer.icon} i={i} />
               <Typography className={`${classes.heading} panel-heading`}>
+                {' '}
                 {drawer.heading}
+              </Typography>
+              <Typography className={classes.secondaryHeading}>
+                I am an expansion panel
               </Typography>
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
@@ -49,4 +68,4 @@ function SimpleExpansionPanel(props) {
   )
 }
 
-export default SimpleExpansionPanel
+export default ControlledExpansionPanels
