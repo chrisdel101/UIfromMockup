@@ -20,10 +20,17 @@
   position: relative;
   border-radius: 5px;
 }
+.main-secondblock .info-text {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
 
 .main-secondblock .block-text-header {
   align-self: center;
+  margin-bottom: 20px;
 }
+
 .main-thirdblock {
   width: 100vw;
   margin-left: calc(-50vw + 50%);

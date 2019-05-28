@@ -7,10 +7,13 @@ function renderNavMarkup(props) {
       <div className="mid-navbar">
         {props.links.map((link, i) => {
           return (
-            <nav key={i} className="mid-navbar-link">
-              <div className="midnav-status-line" />
-              <a href={`/${link}`}>{link}</a>
-            </nav>
+            <div className="midnav-link-container">
+              <nav key={i} className="mid-navbar-link">
+                <a href={`/${link}`}>
+                  <span className="mid-nav-number">0{i + 1}</span> {link}
+                </a>
+              </nav>
+            </div>
           )
         })}
       </div>

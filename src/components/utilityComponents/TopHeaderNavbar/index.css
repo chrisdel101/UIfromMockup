@@ -3,6 +3,12 @@
   background-color: rgba(0, 0, 0, 0) !important;
   border: none !important;
 }
+.top-navbar .nav-link {
+  margin: 0 8px;
+}
+.top-navbar a {
+  text-transform: uppercase;
+}
 .top-navbar .navbar-collapse {
   box-shadow: none;
 }

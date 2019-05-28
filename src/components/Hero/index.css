@@ -7,15 +7,21 @@
 }
 .hero-image-container {
   display: flex;
+  /* margin-top: 10px; */
 }
 .hero-firstblock {
   margin: 70px 0;
 }
 .hero .block-text-header {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
-
 .hero .hero-image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.hero .info-text {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }

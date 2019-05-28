@@ -1,22 +1,34 @@
 .mid-navbar {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 150px));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-content: center;
   position: relative;
   margin-top: 50px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  grid-gap: 0 15px;
 }
-.mid-navbar-link {
+.header .mid-navbar-link {
   margin: 0 5px;
-  width: 100px;
+  width: 100%;
+  color: #ffffff !important;
+  height: 50px;
 }
-.midnav-status-line {
-  height: 1px;
-  background-color: #ffffff;
+.header .mid-navbar-link a {
+  color: #ffffff !important;
+  text-transform: uppercase;
 }
-
+.midnav-link-container {
+  border-top: 2px solid #ffffff;
+}
+.mid-nav-number {
+  font-size: 20px;
+  font-family: 'Monserat';
+  font-weight: bold;
+}
 @media (max-width: 700px) {
   .mid-navbar {
-    grid-template-rows: repeat(4, minmax(40px, 1fr));
+    grid-template-rows: repeat(autofit, minmax(100px, 1fr));
     grid-template-columns: initial;
   }
 }
