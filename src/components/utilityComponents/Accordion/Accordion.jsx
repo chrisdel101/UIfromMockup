@@ -32,6 +32,14 @@ function ControlledExpansionPanels(props) {
   const handleChange = panel => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false)
   }
+  // get first panel open on load
+  function setAttributes(i) {
+    return [
+      { defaultExpanded: true },
+      { expanded: expanded === `panel2` },
+      { expanded: expanded === `panel3` }
+    ]
+  }
 
   return (
     <div className={`${classes.root} accordion`}>
@@ -39,7 +47,7 @@ function ControlledExpansionPanels(props) {
         return (
           <ExpansionPanel
             key={i}
-            expanded={expanded === `panel${i + 1}`}
+            {...setAttributes(i)[i]}
             onChange={handleChange(`panel${i + 1}`)}
             className="expansion-panel"
           >
