@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
+import './index.css'
 
 function renderType(props) {
   //   console.log(props)

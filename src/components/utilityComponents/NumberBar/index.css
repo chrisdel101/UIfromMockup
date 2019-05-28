@@ -19,12 +19,13 @@
   margin: 0 15px;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .number-bar {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
-  .numberbar-number {
+  /* .numberbar-number {
     font-size: 15px;
-  }
+  } */
 }
