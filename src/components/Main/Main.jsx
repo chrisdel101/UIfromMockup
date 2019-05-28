@@ -10,9 +10,14 @@ import './index.css'
 function renderWorks(props) {
   return (
     <div className="work">
-      {props.works.map((work, i) => {
-        return <Image src={work.src} alt={work.name} key={i} />
-      })}
+      <div className="work-expanded">
+        {props.works.map((work, i) => {
+          return <Image src={work.src} alt={work.name} key={i} />
+        })}
+      </div>
+      <div className="work-carousel">
+        <Carousel works={props.works} instance="works" />
+      </div>
     </div>
   )
 }
@@ -51,7 +56,7 @@ function Main(props) {
       </div>
 
       <div className="main-thirdblock">
-        <Carousel reviews={props.reviews} />
+        <Carousel reviews={props.reviews} instance="reviews" />
       </div>
 
       <div className="main-fourthblock">
