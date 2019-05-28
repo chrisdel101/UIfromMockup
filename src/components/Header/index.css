@@ -34,3 +34,14 @@
   border-color: #ffffff;
   align-self: center;
 }
+@media (max-width: 500px) {
+  .page .header {
+    padding: 0 15px;
+  }
+  .mid-navbar {
+    padding: 0 60px;
+  }
+  .header .block-text-header .block-text {
+    font-size: 35px;
+  }
+}

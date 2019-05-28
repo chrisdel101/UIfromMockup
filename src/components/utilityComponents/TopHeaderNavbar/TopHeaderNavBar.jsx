@@ -14,7 +14,7 @@ class TopNavBar extends React.Component {
     if (link.type === 'link') {
       return (
         <Nav.Link
-          className={`${this.addUnderline(link) ? 'active' : ''}`}
+          className={`${this.addUnderline(link) ? 'topnav-active' : ''}`}
           key={i}
           href={`/${link.text}`}
           onMouseOver={e => this.moveUnderLine(e)}

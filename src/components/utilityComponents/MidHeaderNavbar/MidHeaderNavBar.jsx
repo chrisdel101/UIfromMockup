@@ -1,4 +1,5 @@
 import React from 'react'
+import { ProgressBar } from 'react-bootstrap'
 import './index.css'
 
 function renderNavMarkup(props) {
@@ -7,7 +8,7 @@ function renderNavMarkup(props) {
       <div className="mid-navbar">
         {props.links.map((link, i) => {
           return (
-            <div className="midnav-link-container">
+            <div className="midnav-link-container" key={i}>
               <nav key={i} className="mid-navbar-link">
                 <a href={`/${link}`}>
                   <span className="mid-nav-number">0{i + 1}</span> {link}

@@ -2,7 +2,7 @@
   width: 100vw;
   /* https://stackoverflow.com/a/31391593/5972531 */
   margin-left: calc(-50vw + 50%);
-  background-image: url('../../../images/teal_rect.png');
+  background-color: #95e1d3;
   color: #ffffff;
   display: flex;
   height: 150px;
@@ -18,4 +18,13 @@
 .counter {
   margin: 0 15px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .number-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .numberbar-number {
+    font-size: 15px;
+  }
 }

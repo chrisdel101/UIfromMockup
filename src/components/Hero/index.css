@@ -25,3 +25,13 @@
   margin-bottom: 40px;
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  .hero .hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-image-container .image-container {
+    margin: 10px 0;
+  }
+}

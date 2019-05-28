@@ -4,3 +4,8 @@
   margin: auto;
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .info-text {
+    max-width: 300px;
+  }
+}
