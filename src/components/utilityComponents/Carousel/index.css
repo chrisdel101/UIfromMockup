@@ -7,3 +7,11 @@
 .carousel-control-prev-icon {
   filter: opacity(0.5) drop-shadow(0 0 0 black);
 }
+
+@media (max-width: 500px) {
+  /* change to red on mobile so icons are visible */
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    filter: opacity(0.5) drop-shadow(0 0 0 red);
+  }
+}
