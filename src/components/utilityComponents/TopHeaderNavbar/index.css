@@ -19,3 +19,9 @@
 .topnav-active {
   border-bottom: 1px solid white;
 }
+@media (max-width: 760px) {
+  .navbar-nav {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
+}
