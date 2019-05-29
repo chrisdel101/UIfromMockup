@@ -29,3 +29,6 @@
   font-family: 'Monserat';
   font-weight: bold;
 }
+.mid-navbar-link a:hover {
+  text-decoration: none;
+}

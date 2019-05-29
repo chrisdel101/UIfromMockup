@@ -19,6 +19,7 @@
 .hero .hero-image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
 }
 .hero .info-text {
   margin: 0 auto;

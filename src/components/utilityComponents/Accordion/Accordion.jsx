@@ -30,17 +30,17 @@ function ControlledExpansionPanels(props) {
   const [expanded, setExpanded] = React.useState(false)
 
   const handleChange = panel => (event, isExpanded) => {
+    console.log(panel)
     setExpanded(isExpanded ? panel : false)
   }
   // get first panel open on load
   function setAttributes(i) {
     return [
-      { defaultExpanded: true },
+      { defaultExpanded: true, expanded: expanded === `panel1` },
       { expanded: expanded === `panel2` },
       { expanded: expanded === `panel3` }
     ]
   }
-
   return (
     <div className={`${classes.root} accordion`}>
       {Object.values(props.drawers).map((drawer, i) => {
@@ -62,9 +62,7 @@ function ControlledExpansionPanels(props) {
                 {' '}
                 {drawer.heading}
               </Typography>
-              <Typography className={classes.secondaryHeading}>
-                I am an expansion panel
-              </Typography>
+              <Typography className={classes.secondaryHeading} />
             </ExpansionPanelSummary>
             <ExpansionPanelDetails>
               <Typography>{drawer.text}</Typography>
