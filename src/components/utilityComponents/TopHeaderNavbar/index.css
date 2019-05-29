@@ -2,6 +2,9 @@
   align-self: flex-end;
   background-color: rgba(0, 0, 0, 0) !important;
   border: none !important;
+  /* height: 4em;
+  max-width: 100px;
+  width: 100px; */
 }
 .top-navbar .nav-link {
   margin: 0 8px;
@@ -15,13 +18,17 @@
 .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
+.navbar-nav.nav-invisible {
+  opacity: 0;
+}
 
 .topnav-active {
   border-bottom: 1px solid white;
 }
-@media (max-width: 760px) {
+@media (max-width: 765px) {
   .navbar-nav {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
+    transition: opacity 0.2s ease-in-out;
   }
 }

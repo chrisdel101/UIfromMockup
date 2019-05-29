@@ -35,10 +35,13 @@
   align-self: center;
 }
 @media (max-width: 500px) {
+  .logo {
+    margin-left: 35px;
+  }
   .page .header {
     padding: 0 15px;
   }
-  .mid-navbar {
+  .page .mid-navbar {
     padding: 0 60px;
   }
   .header .block-text-header .block-text {

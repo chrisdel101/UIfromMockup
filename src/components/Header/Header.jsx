@@ -7,12 +7,20 @@ import './index.css'
 import HeaderTextBlock from '../utilityComponents/HeaderTextBlock/HeaderTextBlock'
 import Dash from '../utilityComponents/Dash/Dash'
 
+function handleClick() {
+  console.log('click')
+}
 function Header(props) {
   const { header } = props.headerBlocks
   return (
     <header className="header">
       <Logo text="MoGo" />
-      <TopNavBar numOfLinks={5} instance="top-nav" links={props.topNavlinks} />
+      <TopNavBar
+        numOfLinks={5}
+        instance="top-nav"
+        links={props.topNavlinks}
+        onClick={handleClick}
+      />
       <HeaderTextBlock cursive={header.cursive} block={header.block} />
       <Dash />
       <Button

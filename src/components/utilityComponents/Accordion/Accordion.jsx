@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 
 function ControlledExpansionPanels(props) {
   const classes = useStyles()
-  const [expanded, setExpanded] = React.useState(false)
+  const [expanded, setExpanded] = React.useState('panel1')
 
   const handleChange = panel => (event, isExpanded) => {
     console.log(panel)
@@ -36,7 +36,7 @@ function ControlledExpansionPanels(props) {
   // get first panel open on load
   function setAttributes(i) {
     return [
-      { defaultExpanded: true, expanded: expanded === `panel1` },
+      { expanded: expanded === `panel1` },
       { expanded: expanded === `panel2` },
       { expanded: expanded === `panel3` }
     ]
