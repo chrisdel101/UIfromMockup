@@ -1,0 +1,353 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create and match snapshot 1`] = `
+<div
+  className="makeStyles-root-1 accordion"
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiExpansionPanel-root Mui-expanded MuiExpansionPanel-rounded expansion-panel"
+  >
+    <div
+      aria-controls="panel1bh-content"
+      aria-disabled={false}
+      aria-expanded={true}
+      className="MuiButtonBase-root MuiExpansionPanelSummary-root Mui-expanded expansion-panel-inner"
+      id="panel1bh-header"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiExpansionPanelSummary-content Mui-expanded"
+      >
+        <div
+          className="icon-container-0 icon-container"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-picture-o icon"
+          />
+        </div>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-heading-2 panel-heading"
+        >
+           
+          photography
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-secondaryHeading-3"
+        />
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiExpansionPanelSummary-expandIcon Mui-expanded"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-container MuiCollapse-entered"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="panel1bh-header"
+            id="panel1bh-content"
+            role="region"
+          >
+            <div
+              className="MuiExpansionPanelDetails-root"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1"
+              >
+                Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiExpansionPanel-root MuiExpansionPanel-rounded expansion-panel"
+  >
+    <div
+      aria-controls="panel2bh-content"
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiExpansionPanelSummary-root expansion-panel-inner"
+      id="panel2bh-header"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiExpansionPanelSummary-content"
+      >
+        <div
+          className="icon-container-1 icon-container"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-sliders icon"
+          />
+        </div>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-heading-2 panel-heading"
+        >
+           
+          creativity
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-secondaryHeading-3"
+        />
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiExpansionPanelSummary-expandIcon"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-container MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="panel2bh-header"
+            id="panel2bh-content"
+            role="region"
+          >
+            <div
+              className="MuiExpansionPanelDetails-root"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1"
+              >
+                Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiExpansionPanel-root MuiExpansionPanel-rounded expansion-panel"
+  >
+    <div
+      aria-controls="panel3bh-content"
+      aria-disabled={false}
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiExpansionPanelSummary-root expansion-panel-inner"
+      id="panel3bh-header"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiExpansionPanelSummary-content"
+      >
+        <div
+          className="icon-container-2 icon-container"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-bullseye icon"
+          />
+        </div>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-heading-2 panel-heading"
+        >
+           
+          web design
+        </p>
+        <p
+          className="MuiTypography-root MuiTypography-body1 makeStyles-secondaryHeading-3"
+        />
+      </div>
+      <div
+        aria-disabled={false}
+        aria-hidden={true}
+        className="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiExpansionPanelSummary-expandIcon"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex={-1}
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            className="MuiSvgIcon-root"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-container MuiCollapse-hidden"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner"
+        >
+          <div
+            aria-labelledby="panel3bh-header"
+            id="panel3bh-content"
+            role="region"
+          >
+            <div
+              className="MuiExpansionPanelDetails-root"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1"
+              >
+                Nor whom love fountain seemed ive chaste did. Heal dote into take their native begun. Of he can way loved cared him had to dear, from him parting flaunting noontide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

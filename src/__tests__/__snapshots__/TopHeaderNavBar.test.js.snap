@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create and match snapshot 1`] = `
+<nav
+  className="top-navbar navbar navbar-expand-md navbar-dark"
+>
+  <button
+    aria-controls="responsive-navbar-nav"
+    aria-label="Toggle navigation"
+    className="navbar-toggler collapsed"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    aria-expanded={null}
+    className="navbar-collapse collapse show"
+    id="responsive-navbar-nav"
+  >
+    <div
+      className="mr-auto  navbar-nav"
+      onKeyDown={[Function]}
+    />
+    <div
+      className="navbar-nav"
+      onKeyDown={[Function]}
+    />
+  </div>
+</nav>
+`;

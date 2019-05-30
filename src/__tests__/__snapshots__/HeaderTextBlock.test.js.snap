@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create and match snapshot 1`] = `
+<div
+  className="block-text-header"
+>
+  <div
+    className="cursive-text"
+  />
+  <div
+    className="block-text"
+  />
+</div>
+`;

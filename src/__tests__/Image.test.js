@@ -1,9 +1,9 @@
 import React from 'react'
-import Button from '../components/utilityComponents/Button/Button.jsx'
+import Image from '../components/utilityComponents/Image/Image.jsx'
 import renderer from 'react-test-renderer'
 
 test('create and match snapshot', () => {
-  const component = renderer.create(<Button variant="primary">Facebook</Button>)
+  const component = renderer.create(<Image />)
 
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()

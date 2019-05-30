@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create and match snapshot 1`] = `
+<div
+  className="mid-navbar"
+>
+  <div
+    className="midnav-link-container "
+  >
+    <nav
+      className="mid-navbar-link"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    >
+      <a
+        href="/Intro"
+      >
+        <span
+          className="mid-nav-number"
+        >
+          0
+          1
+        </span>
+         
+        Intro
+      </a>
+    </nav>
+  </div>
+  <div
+    className="midnav-link-container "
+  >
+    <nav
+      className="mid-navbar-link"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    >
+      <a
+        href="/Work"
+      >
+        <span
+          className="mid-nav-number"
+        >
+          0
+          2
+        </span>
+         
+        Work
+      </a>
+    </nav>
+  </div>
+  <div
+    className="midnav-link-container "
+  >
+    <nav
+      className="mid-navbar-link"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    >
+      <a
+        href="/About"
+      >
+        <span
+          className="mid-nav-number"
+        >
+          0
+          3
+        </span>
+         
+        About
+      </a>
+    </nav>
+  </div>
+  <div
+    className="midnav-link-container "
+  >
+    <nav
+      className="mid-navbar-link"
+      onMouseLeave={[Function]}
+      onMouseOver={[Function]}
+    >
+      <a
+        href="/Contacts"
+      >
+        <span
+          className="mid-nav-number"
+        >
+          0
+          4
+        </span>
+         
+        Contacts
+      </a>
+    </nav>
+  </div>
+</div>
+`;

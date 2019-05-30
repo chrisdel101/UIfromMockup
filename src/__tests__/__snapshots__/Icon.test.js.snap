@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create and match snapshot 1`] = `
+<div
+  className="icon-container-undefined icon-container"
+>
+  <i
+    aria-hidden="true"
+    className="fa fa-undefined icon"
+  />
+</div>
+`;
