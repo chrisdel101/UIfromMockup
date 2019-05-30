@@ -2,9 +2,6 @@
   align-self: flex-end;
   background-color: rgba(0, 0, 0, 0) !important;
   border: none !important;
-  /* height: 4em;
-  max-width: 100px;
-  width: 100px; */
 }
 .top-navbar .nav-link {
   margin: 0 8px;
@@ -22,8 +19,9 @@
   opacity: 0;
 }
 
-.topnav-active {
-  border-bottom: 1px solid white;
+.navbar-nav .topnav-active {
+  border-bottom: 2px solid #fce38a;
+  color: #fce38a !important;
 }
 @media (max-width: 765px) {
   .navbar-nav {

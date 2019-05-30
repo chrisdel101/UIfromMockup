@@ -57,9 +57,9 @@ class TopNavBar extends React.Component {
   }
   componentDidMount() {
     const that = this
+    // listen for nav resize
     window.addEventListener('resize', e => {
       if (e.target.innerWidth <= 768) {
-        console.log(false)
         that.setState({ navVisible: false })
       } else {
         that.setState({ navVisible: true })

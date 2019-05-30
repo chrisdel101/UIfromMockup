@@ -19,7 +19,7 @@
   margin: 0 15px;
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 608px) {
   .number-bar {
     display: flex;
     flex-direction: column;

@@ -26,7 +26,7 @@
   margin-bottom: 40px;
   margin-top: 20px;
 }
-@media (max-width: 600px) {
+@media (max-width: 608px) {
   .hero .hero-image-container {
     display: flex;
     flex-direction: column;
