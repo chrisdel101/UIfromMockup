@@ -70,10 +70,6 @@ class NumberBar extends Component {
       return setInterval(createTimer, 1000, key)
     })
   }
-  // not used -remove at end
-  stopTimer() {
-    clearInterval(this.countUp)
-  }
   renderCustomMarkUp(obj, i) {
     return (
       <div className="counter custome-counter" key={i}>

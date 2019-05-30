@@ -8,22 +8,26 @@ import { cloneDeep, mapValues } from 'lodash'
 class TopNavBar extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
-      navVisible: false
+      navVisible: null,
+      links: {
+        About: 'active',
+        Service: null,
+        Work: null,
+        Blog: null,
+        Contact: null
+      }
     }
     this.handleClick = this.handleClick.bind(this)
   }
   handleClick(e) {
-    console.log(e)
     // toggle for responsive dropdown
     this.setState(prevState => ({
       navVisible: !prevState.navVisible
     }))
-    // console.log(this.state.navVisible)
-    // send to parent
-    this.props.onClick(e)
   }
-  // render depending on type of link
+  // render depending on type of link - link or icon
   renderLinkType(link, i) {
     if (link.type === 'link') {
       return (
@@ -49,31 +53,27 @@ class TopNavBar extends React.Component {
       )
     }
   }
-  // on hover add underlie
+  // on hover add underline and change color
   addUnderline(link) {
     if (!link || !link.text || !this.state.links) return
     if (!this.state.links[link.text]) return
     return true
   }
+  handleSize(num) {
+    if (window.innerWidth <= num) {
+      return false
+    } else {
+      return true
+    }
+  }
   componentDidMount() {
+    this.setState({
+      navVisible: this.handleSize(769)
+    })
     const that = this
     // listen for nav resize
     window.addEventListener('resize', e => {
-      if (e.target.innerWidth <= 768) {
-        that.setState({ navVisible: false })
-      } else {
-        that.setState({ navVisible: true })
-      }
-    })
-    const obj = {}
-    // create obj for nulls
-    this.props.links.map(link => {
-      obj[link.text] = null
-    })
-    // set about to active on mount
-    obj['About'] = 'active'
-    this.setState({
-      links: obj
+      that.setState({ navVisible: that.handleSize(768) })
     })
   }
   // move underline on hover
@@ -90,9 +90,7 @@ class TopNavBar extends React.Component {
       <React.Fragment>
         <Navbar
           className={`top-navbar`}
-          collapseOnSelect
           expand="md"
-          bg="dark"
           variant="dark"
           expanded="true"
           onToggle={this.handleClick}
@@ -116,8 +114,6 @@ class TopNavBar extends React.Component {
   }
 
   render() {
-    // console.log(this.state.navVisible)
-    // console.log(this.getWidth() < 767)
     return <React.Fragment>{this.renderNavMarkup()}</React.Fragment>
   }
 }

@@ -18,14 +18,13 @@
 .navbar-nav.nav-invisible {
   opacity: 0;
 }
-
 .navbar-nav .topnav-active {
   border-bottom: 2px solid #fce38a;
   color: #fce38a !important;
 }
-@media (max-width: 765px) {
+@media (max-width: 769px) {
   .navbar-nav {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(74, 42, 42, 0.5);
     position: absolute;
     transition: opacity 0.2s ease-in-out;
   }

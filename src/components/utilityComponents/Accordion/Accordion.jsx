@@ -8,8 +8,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import Icon from '../Icon/Icon'
 import './index.css'
 
-// import './index.css'
-
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%'

@@ -2,7 +2,6 @@ import React from 'react'
 import { Image } from 'react-bootstrap'
 
 function renderType(props) {
-  //   console.log(props)
   if (props.type === 'fluid') {
     return <Image src={props.src} alt={props.alt} fluid />
   } else {

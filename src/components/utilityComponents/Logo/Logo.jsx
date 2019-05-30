@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './index.css'
+import './index.css'
 
 function Logo(props) {
   return <div className="logo">{props.text}</div>

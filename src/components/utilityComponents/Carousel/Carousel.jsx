@@ -31,7 +31,7 @@ function renderWorks(props) {
 function myCarousel(props) {
   if (!props.instance) return
   return (
-    <Carousel interval={30000} className="work">
+    <Carousel interval={5000} className="work">
       {props.instance === 'reviews' ? renderReviews(props) : renderWorks(props)}
     </Carousel>
   )

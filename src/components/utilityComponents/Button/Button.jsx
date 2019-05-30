@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import styles from './index.css'
+import './index.css'
 
 function myButton(props) {
   return (

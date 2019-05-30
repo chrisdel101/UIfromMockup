@@ -29,7 +29,7 @@ function Main(props) {
   } = props.headerBlocks
   return (
     <main className="main">
-      <div className="main-firstblock">
+      <section className="main-firstblock">
         <BlockTextHeader
           cursive={mainFirstBlock.cursive}
           block={mainFirstBlock.block}
@@ -40,9 +40,9 @@ function Main(props) {
           src="http://place-puppy.com/200x300"
           alt="a puppy"
         />
-      </div>
+      </section>
 
-      <div className="main-secondblock">
+      <section className="main-secondblock">
         <BlockTextHeader
           cursive={mainSecondBlock.cursive}
           block={mainSecondBlock.block}
@@ -53,13 +53,13 @@ function Main(props) {
           <Image src="http://place-puppy.com/400x280" alt="a puppy" />
           <Accordion drawers={props.services} />
         </div>
-      </div>
+      </section>
 
-      <div className="main-thirdblock">
+      <section className="main-thirdblock">
         <Carousel reviews={props.reviews} instance="reviews" />
-      </div>
+      </section>
 
-      <div className="main-fourthblock">
+      <section className="main-fourthblock">
         <BlockTextHeader
           cursive={mainFourthBlock.cursive}
           block={mainFourthBlock.block}
@@ -67,7 +67,7 @@ function Main(props) {
         <Dash />
         <InfoTextBlock text="Diam justo dolor elitr sadipscing sanctus duo erat, amet lorem ut sed sed sanctus labore. Vero amet ipsum sit dolor.." />
         {renderWorks(props)}
-      </div>
+      </section>
     </main>
   )
 }
