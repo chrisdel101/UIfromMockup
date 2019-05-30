@@ -4,7 +4,6 @@ import Hero from '../Hero/Hero'
 import Main from '../Main/Main'
 import './index.css'
 import data from '../../data.json'
-console.log(data)
 
 class Page extends React.Component {
   constructor(props) {
@@ -15,7 +14,9 @@ class Page extends React.Component {
       works: data.works,
       headerBlocks: data.headerBlocks,
       topNavlinks: data.topNavlinks,
-      midNavLinks: data.midNavLinks
+      midNavLinks: data.midNavLinks,
+      numberLineItems: data.numberLineItems,
+      counterDuration: 5
     }
   }
   render() {
@@ -33,7 +34,8 @@ class Page extends React.Component {
             'http://place-puppy.com/200x201'
           ]}
           headerBlocks={this.state.headerBlocks}
-          numberLine={this.state.numberLine}
+          numberLine={this.state.numberLineItems}
+          counterDuration={this.state.counterDuration}
         />
         <Main
           headerBlocks={this.state.headerBlocks}

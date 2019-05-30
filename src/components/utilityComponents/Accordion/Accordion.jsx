@@ -28,7 +28,6 @@ function ControlledExpansionPanels(props) {
   const [expanded, setExpanded] = React.useState('panel1')
 
   const handleChange = panel => (event, isExpanded) => {
-    console.log(panel)
     setExpanded(isExpanded ? panel : false)
   }
   // get first panel open on load

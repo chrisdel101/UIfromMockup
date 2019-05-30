@@ -19,7 +19,10 @@ function Hero(props) {
           })}
         </div>
       </div>
-      <NumberBar numberLine={props.numberLine} />
+      <NumberBar
+        numberLine={props.numberLine}
+        counterDuration={props.counterDuration}
+      />
     </section>
   )
 }

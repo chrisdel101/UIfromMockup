@@ -7,31 +7,15 @@ class NumberBar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      reached: false,
-      counterDuration: 2.5,
-      numberLine: {
-        1: {
-          end: 42,
-          text: 'web desgin projects'
-        },
-        2: {
-          end: 123,
-          text: 'happy clients'
-        },
-        3: {
-          end: 15,
-          text: 'award winners'
-        },
-        4: {
-          end: 99,
-          text: 'cups of coffee'
-        },
-        5: {
-          end: 24,
-          text: 'members'
-        }
-      }
+      reached: false
     }
+  }
+  componentDidMount() {
+    // add props to state
+    this.setState({
+      numberLine: this.props.numberLine,
+      counterDuration: this.props.counterDuration
+    })
   }
   renderCountJSMarkUp(obj, i) {
     return (
@@ -87,6 +71,7 @@ class NumberBar extends Component {
     }
   }
   renderCount() {
+    if (!this.state || !this.state.numberLine) return
     return Object.values(this.state.numberLine).map((obj, i) =>
       this.renderProperMarkup(obj, i)
     )
