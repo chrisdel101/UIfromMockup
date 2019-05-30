@@ -25,6 +25,7 @@
 }
 .main-accordion-container {
   margin: 40px 0;
+  height: 450px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
