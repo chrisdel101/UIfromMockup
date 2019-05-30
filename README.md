@@ -16,7 +16,7 @@ The main app file is `Page.jsx` and the three other major component files are `H
 
 **Number Bar**
 
-The numbers start from zero and increment up to ending number set in the data file. The timer for the counter, how fast they reach the end, can be adjusted using the `countDuration` value in the state of `Page.jsx`.
+The numbers start from zero and increments up to the ending number set in the data file. The timer for the counters, how fast they reach the end, can be adjusted using the `countDuration` value in the state of `Page.jsx`.
 
 They resume at one second increments after reaching the end.
 
