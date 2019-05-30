@@ -48,7 +48,7 @@ function Main(props) {
         <Dash />
         <Image
           id="stacked-image1"
-          src="http://place-puppy.com/200x300"
+          src="http://place-puppy.com/"
           alt="a puppy"
         />
       </section>
@@ -63,7 +63,7 @@ function Main(props) {
         <div className="main-accordion-container">
           <Image
             style={{ height: stateHeight.height.toString() + 'px' }}
-            src="http://place-puppy.com/400x280"
+            src={`http://place-puppy.com/${stateHeight.height.toString()}x${stateHeight.height.toString()}`}
             alt="a puppy"
           />
           <Accordion drawers={props.services} />
