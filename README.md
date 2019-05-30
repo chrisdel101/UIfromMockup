@@ -20,8 +20,6 @@ The numbers start from zero and increment up to ending number set in the data fi
 
 They resume at one second increments after reaching the end.
 
-**Bugs**
+**Conculsion**
 
-There is a bug in the accordion compoenent. The image next to it sticks to the accordion, so when it is opened and closed the image jerks. I was not able to debug this issue so I wanted to alert you that it is there, and could be fixed eventually in future iteration.
-
-There is also a bug in the top navbar when resizing the page. It doesn't totally respect the page-size media queries and so can behave unexpectedly i.e will disappear while the page is at a certain width.
+I am happy to have any feedback and add updates as requested.

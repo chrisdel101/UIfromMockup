@@ -48,7 +48,7 @@ function Main(props) {
         <Dash />
         <Image
           id="stacked-image1"
-          src="http://place-puppy.com/"
+          src="http://place-puppy.com/200x300"
           alt="a puppy"
         />
       </section>
