@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/UIfromMockup/static/css/main.d2798c07.chunk.css",
+    "main.css": "/UIfromMockup/static/css/main.b6c40a65.chunk.css",
     "main.js": "/UIfromMockup/static/js/main.41b0746a.chunk.js",
     "main.js.map": "/UIfromMockup/static/js/main.41b0746a.chunk.js.map",
     "runtime~main.js": "/UIfromMockup/static/js/runtime~main.4f19ac4c.js",
@@ -8,9 +8,9 @@
     "static/js/2.3a15ae0c.chunk.js": "/UIfromMockup/static/js/2.3a15ae0c.chunk.js",
     "static/js/2.3a15ae0c.chunk.js.map": "/UIfromMockup/static/js/2.3a15ae0c.chunk.js.map",
     "index.html": "/UIfromMockup/index.html",
-    "precache-manifest.8e80da43c4766ff35c20dd281942e69a.js": "/UIfromMockup/precache-manifest.8e80da43c4766ff35c20dd281942e69a.js",
+    "precache-manifest.d553baea63daf7452a9e843d75c73b81.js": "/UIfromMockup/precache-manifest.d553baea63daf7452a9e843d75c73b81.js",
     "service-worker.js": "/UIfromMockup/service-worker.js",
-    "static/css/main.d2798c07.chunk.css.map": "/UIfromMockup/static/css/main.d2798c07.chunk.css.map",
+    "static/css/main.b6c40a65.chunk.css.map": "/UIfromMockup/static/css/main.b6c40a65.chunk.css.map",
     "static/media/index.css": "/UIfromMockup/static/media/forest.dddbbaf0.png"
   }
 }
