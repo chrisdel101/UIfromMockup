@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import BlockTextHeader from '../utilityComponents/HeaderTextBlock/HeaderTextBlock'
 import Image from '../utilityComponents/Image/Image'
 import InfoTextBlock from '../utilityComponents/InfoTextBlock/InfoTextBlock'
@@ -27,6 +27,17 @@ function Main(props) {
     mainSecondBlock,
     mainFourthBlock
   } = props.headerBlocks
+  // set state of image height
+  const [stateHeight, setHeight] = useState({
+    height: '0'
+  })
+  // get height of container and sign height to image
+  useEffect(() => {
+    const height = document
+      .querySelector('.main-accordion-container')
+      .getBoundingClientRect().height
+    setHeight({ height: height })
+  }, [])
   return (
     <main className="main">
       <section className="main-firstblock">
@@ -50,7 +61,11 @@ function Main(props) {
         <Dash />
         <InfoTextBlock text="Diam justo dolor elitr sadipscing sanctus duo erat, amet lorem ut sed sed sanctus labore. Vero amet ipsum sit dolor.." />
         <div className="main-accordion-container">
-          <Image src="http://place-puppy.com/400x280" alt="a puppy" />
+          <Image
+            style={{ height: stateHeight.height.toString() + 'px' }}
+            src="http://place-puppy.com/400x280"
+            alt="a puppy"
+          />
           <Accordion drawers={props.services} />
         </div>
       </section>
